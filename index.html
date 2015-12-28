@@ -35,12 +35,15 @@
                     <h3>
                         <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>¡Bienvenidas!
                     </h3>
-
                     <p>¡Si habéis llegado hasta aquí, es que sóis unas chicas muy inteligentes (¡y que usáis jabón MUY a menudo!).</p>
+                    
+                    <h3>
+                        <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>¡Vamos allá!
+                    </h3>
                     <p>Introducid a continuación el código que ya habréis descubierto y estaréis un paso más cerca de... ¡vuestro REGALACO!.</p>
                     <div>
-                        Código: <input type="text" name="code"><br>
-                        <button class="button" onclick="toggle_visibility('resultado_correcto',code,'resultado_erroneo');">¡Púlsame!</button>
+                        Código: <input type="text" name="code" id="code"><br/>
+                        <button class="button" onclick="toggle_visibility('resultado_correcto',document.getElementById('code').value,'resultado_erroneo');">¡Púlsame!</button>
                     </div>
 
                     <div id="resultado_correcto" style="display: none;">
