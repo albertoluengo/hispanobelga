@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset='utf-8'>
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=EmulateIE7; IE=EmulateIE9">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
         <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
         <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+        <link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
         <script src="javascripts/main.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <!-- FlexSlider -->
+        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            var $ = jQuery.noConflict();
+            $(window).load(function () {
+                $('.flexslider').flexslider({
+                    animation: "fade"
+                });
+
+                $(function () {
+                    $('.show_menu').click(function () {
+                        $('.menu').fadeIn();
+                        $('.show_menu').fadeOut();
+                        $('.hide_menu').fadeIn();
+                    });
+                    $('.hide_menu').click(function () {
+                        $('.menu').fadeOut();
+                        $('.show_menu').fadeIn();
+                        $('.hide_menu').fadeOut();
+                    });
+                });
+            });
+        </script>   
         <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -36,32 +63,32 @@
                         <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>¡Bienvenidas!
                     </h3>
                     <p>¡Si habéis llegado hasta aquí, es que sabéis utilizar un navegador web (¡y que usáis jabón MUY a menudo!).</p>
-                    
+
                     <h3>
                         <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>...pero...
                     </h3>
                     <p>¡Aún no está todo dicho!. Introducid a continuación el código que ya habréis descubierto y estaréis un paso más cerca de... ¡vuestro REGALACO!.</p>
                     <div>
                         <input type="text" name="code" id="code" size="7"><br/>
-                        <button class="button" onclick="toggle_visibility('resultado_correcto',document.getElementById('code').value,'resultado_erroneo');">¡Púlsame, POR DIOS!</button>
+                        <button class="button" onclick="toggle_visibility('resultado_correcto', document.getElementById('code').value, 'resultado_erroneo');">¡Púlsame, POR DIOS!</button>
                     </div>
 
                     <div id="resultado_correcto" style="display: none;">
                         <h3>
-                        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>¡YUJUUUU!
+                            <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>¡YUJUUUU!
                         </h3>
                         <p>Una fecha tan importante para todos tiene que tener un regalo igual de importante...</p>
                         <p>...pero para descubrirlo, tenéis que mandarnos un Whatsapp a Patri o a mí con el texto COMONOSMOLAMOS</p>
-                        <p>(prometemos que esta sí es el último paso...:)</p>
+                        <p>¡Prometemos que éste sí es el último paso! :)</p>
                     </div>
-                    
+
                     <div id="resultado_erroneo" style="display: none;">
                         <h3>
-                        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>¡BUUUU!
+                            <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>¡BUUUU!
                         </h3>
                         <p>¡Código incorrecto!. ¡Frotad bien lo que queda de jabón y volvedlo a intentar!.</p>
                     </div>
-                    
+
                     <!--<h3>
                     <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
                     
