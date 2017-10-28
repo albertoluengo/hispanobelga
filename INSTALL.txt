@@ -1,0 +1,10 @@
+Finally, 2 years waiting for this, the project is ready, made with
+love, python3 and pyramid.
+
+Install it by cloning the repo, then:
+
+python -m venv ~/hispanobelga-env
+. ~/hispanobelga-env/bin/activate
+cd hispanobelga
+pip install -e .
+pserve --reload development.ini

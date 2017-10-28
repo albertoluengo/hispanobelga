@@ -1,0 +1,3 @@
+[run]
+source = hispanobelga
+omit = hispanobelga/test*
